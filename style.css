@@ -146,6 +146,10 @@ p {
     border: 5px solid #fff;
 }
 
+.lightbox {
+    display: flex; /* Use flex to center content */
+}
+
 .close {
     position: absolute;
     top: 20px;
