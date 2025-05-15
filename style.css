@@ -65,6 +65,11 @@ p {
     color: #666;
 }
 
+.banner h1 {
+    font-size: 25px;
+    color: #666;
+}
+
 /* Gallery Section */
 .gallery-section {
     background-color: #fff;
@@ -76,6 +81,11 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+.gallery-section h2 {
+    font-size: 20px;
+    color: #666;
 }
 
 .gallery img {
