@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #356592;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1d2433;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border: 5px solid #ccc;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #7dbefa;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.contact-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    color: #f4a261;
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #2b4e6e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
