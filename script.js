@@ -13,6 +13,14 @@ galleryItems.forEach(item => {
     });
 });
 
+// Prevent right-click and drag on images
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('contextmenu', e => e.preventDefault());
+        img.addEventListener('dragstart', e => e.preventDefault());
+    });
+});
+
 // Function to close the lightbox
 closeBtn.addEventListener('click', () => {
     lightbox.style.display = 'none';
