@@ -40,7 +40,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 My Art Portfolio. All Rights Reserved.</p>
+        <p>&copy; 2025 Danielle Thorpe. All Rights Reserved.</p>
     </footer>
     <script>
         // Array of artwork filenames
@@ -67,7 +67,23 @@
             img.alt = `Artwork ${index + 1}`; // Set the alt text
             img.className = 'gallery-item'; // Add the class for styling
             galleryContainer.appendChild(img); // Append the image to the gallery container
+
+            // Add click event to open lightbox
+            img.addEventListener('click', () => {
+                document.getElementById('lightbox').style.display = 'block';
+                document.getElementById('lightbox-img').src = img.src;
+                document.getElementById('lightbox-img').alt = img.alt;
+            });
         });
+
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('lightbox').style.display = 'none';
+        };
+        document.getElementById('lightbox').onclick = function(event) {
+            if (event.target === this) {
+                this.style.display = 'none';
+            }
+        };
     </script>
 </body>
 </html>
