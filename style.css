@@ -128,7 +128,7 @@ p {
 
 /* Lightbox Modal */
 .lightbox {
-    display: flex;
+    display: none; /* Hide by default */
     position: fixed;
     z-index: 1000;
     left: 0;

@@ -70,7 +70,7 @@
 
             // Add click event to open lightbox
             img.addEventListener('click', () => {
-                document.getElementById('lightbox').style.display = 'block';
+                document.getElementById('lightbox').style.display = 'flex';
                 document.getElementById('lightbox-img').src = img.src;
                 document.getElementById('lightbox-img').alt = img.alt;
             });
@@ -86,6 +86,7 @@
         document.querySelector('.close').onclick = function() {
             document.getElementById('lightbox').style.display = 'none';
         };
+
         document.getElementById('lightbox').onclick = function(event) {
             if (event.target === this) {
                 this.style.display = 'none';
