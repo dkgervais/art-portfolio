@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Art Portfolio</title>
+    <title>Danielle Thorpe - Art</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <img src="images/banner.jpg" alt="Banner Image" class="banner-image">
+    </section>
+
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
             <div class="container">
                 <ul class="nav-links">
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="art.html">Artwork</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -22,8 +28,27 @@
     <!-- About Content -->
     <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>Hello! I'm an artist passionate about creating unique and inspiring visuals. This is a collection of my favorite works.</p>
+        <p>Blah blah blah</p>
     </section>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeAboutModal">&times;</span>
+            <div class="modal-body">
+                <img src="images/about-photo.jpg" alt="About Danielle Thorpe" class="modal-image">
+                <div class="modal-text">
+                    <h3>Danielle Thorpe</h3>
+                    <p>
+                        Danielle Thorpe is a passionate artist specializing in contemporary and abstract works.
+                        Her art explores color, form, and emotion, inviting viewers to experience new perspectives.
+                        <br><br>
+                        Danielle's portfolio showcases a diverse range of media and techniques, reflecting her dedication to creative exploration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2025 Danielle Thorpe. All Rights Reserved.</p>
