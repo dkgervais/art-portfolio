@@ -105,6 +105,7 @@ p {
 
 .gallery-item-wrapper:hover {
     border-color: #7dbefa;
+    transform: scale(1.05);
 }
 
 .gallery-item {
@@ -118,10 +119,6 @@ p {
     transition: transform 0.2s;
     display: block;
     pointer-events: auto;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
 }
 
 /* About Section */
