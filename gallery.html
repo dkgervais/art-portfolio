@@ -76,6 +76,13 @@
             });
         });
 
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('contextmenu', e => e.preventDefault());
+                img.addEventListener('dragstart', e => e.preventDefault());
+            });
+        });
+
         document.querySelector('.close').onclick = function() {
             document.getElementById('lightbox').style.display = 'none';
         };
