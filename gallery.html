@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <h1>Welcome to My Art Portfolio</h1>
+        <p>Discover my collection of artwork and creativity.</p>
+    </section>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Content -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery" id="gallery-container">
+            <!-- Images will be dynamically generated here -->
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged Image">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Art Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Array of artwork filenames
+        const artworks = [
+            "Shroomish.png",
+            "Blah.png",
+            "Sareth.png",
+            "Tom.png",
+            "Cat.png"
+        ];
+
+        // Select the gallery container
+        const galleryContainer = document.getElementById('gallery-container');
+
+        // Dynamically generate <img> elements for each artwork
+        artworks.forEach((artwork, index) => {
+            const img = document.createElement('img');
+            img.src = `artwork/${artwork}`; // Set the image source
+            img.alt = `Artwork ${index + 1}`; // Set the alt text
+            img.className = 'gallery-item'; // Add the class for styling
+            galleryContainer.appendChild(img); // Append the image to the gallery container
+        });
+    </script>
+</body>
+</html>
